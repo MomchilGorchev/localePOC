@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Localisation POC</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Localisation POC<br />
+            <button class="btn btn-default" id="trigger">Do the magic!</button>
+        </h2>
+        <p class="lead">Change your browser locale settings and click the button</p>
+        <br />
+
+        <h4 class="text-center">Localised content: </h4>
+        <p id="locale-flag"></p>
+        <div class="content">
+            <!-- Localised content goes here -->
+
+        </div>
+
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Templates -->
+    <script id="en" src="templates/en.hbs" type="text/x-handlebars-template"></script>
+    <script id="fr" src="templates/fr.hbs" type="text/x-handlebars-template"></script>
+    <!-- Default template -->
+    <script id="default" type="text/x-handlebars-template">
+        <p>
+            This is the english content!
+        </p>
+        <p><strong>Variables passed:</strong></p>
+        <hr>
+        <p>name: {{name}}</p>
+        <p>email: {{email}}</p>
+    </script>
+
+</body>
+</html>

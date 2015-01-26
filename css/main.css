@@ -1,0 +1,24 @@
+body{
+    background: #9FD6D2;
+    font-family: monospace, serif;
+    color:#3C484F;
+}
+h2{
+    margin: 35px auto;
+}
+hr{
+    border-color: #272222;
+}
+button{
+    margin: 30px;
+}
+.content{
+    margin: 35px;
+    background: #F7EEDF;
+    padding: 7px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 4px 0px rgb(96, 137, 134);
+}
+#locale-flag{
+    margin: 0 0 -35px 35px;
+}

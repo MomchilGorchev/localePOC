@@ -8,15 +8,15 @@
 </head>
 <body>
     <div class="container">
-        <h2 class="text-center">Localisation POC<br />
-            <button class="btn btn-default" id="trigger">Do the magic!</button>
+        <h2 class="text-center localise" data-section="main_title"><br />
         </h2>
-        <p class="lead">Change your browser locale settings and click the button</p>
-        <br />
+        <p class="lead localise text-center" data-section="sub_header"></p>
 
-        <h4 class="text-center">Localised content: </h4>
+        <br />
+        <button class="btn btn-default pull-right" id="trigger">Do the magic!</button>
+
         <p id="locale-flag"></p>
-        <div class="content">
+        <div class="content localise" data-section="main_content">
             <!-- Localised content goes here -->
 
         </div>
@@ -25,21 +25,22 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+    <!--<script src="js/jquery-autobars.js"></script>-->
     <script src="js/main.js"></script>
 
     <!-- Templates -->
-    <script id="en" src="templates/en.hbs" type="text/x-handlebars-template"></script>
-    <script id="fr" src="templates/fr.hbs" type="text/x-handlebars-template"></script>
+    <!--<script id="en" src="templates/en.hbs" type="text/x-handlebars-partials"></script>-->
+    <!--<script id="fr" src="templates/fr.hbs" type="text/x-handlebars-partials"></script>-->
     <!-- Default template -->
-    <script id="default" type="text/x-handlebars-template">
-        <p>
-            This is the english content!
-        </p>
-        <p><strong>Variables passed:</strong></p>
-        <hr>
-        <p>name: {{name}}</p>
-        <p>email: {{email}}</p>
-    </script>
+    <!--<script id="default" type="text/x-handlebars-template">-->
+        <!--<p>-->
+            <!--This is the english content!-->
+        <!--</p>-->
+        <!--<p><strong>Variables passed:</strong></p>-->
+        <!--<hr>-->
+        <!--<p>name: {{name}}</p>-->
+        <!--<p>email: {{email}}</p>-->
+    <!--</script>-->
 
 </body>
 </html>
